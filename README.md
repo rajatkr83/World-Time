@@ -1,6 +1,6 @@
-# World Time
+## World Time
 
-A new Flutter application.
+Welcome to World Time! An app created using Jsonplaceholder & worldtimeapi.org
 
 ## Getting Started
 
