@@ -6,6 +6,8 @@ Welcome to World Time! An app created using Jsonplaceholder & worldtimeapi.org
 ## ScreenShots
 <img src="https://user-images.githubusercontent.com/42904172/119135664-5756dc80-ba5c-11eb-90e7-03476999f33a.png" width="400" height="790">
 <img src="https://user-images.githubusercontent.com/42904172/119135820-8d945c00-ba5c-11eb-98fb-b737c2e40306.png" width="400" height="790">
+<img src="https://user-images.githubusercontent.com/42904172/119136548-6d18d180-ba5d-11eb-8851-d325ece124d1.png" width="400" height="790">
+
 
 
 ## Getting Started
