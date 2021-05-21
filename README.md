@@ -2,6 +2,14 @@
 
 Welcome to World Time! An app created using Jsonplaceholder & worldtimeapi.org
 
+
+##ScreenShots
+
+![Screenshot_1621598475](https://user-images.githubusercontent.com/42904172/119135370-efa09180-ba5b-11eb-8290-65b15ef0e571.png)
+![Screenshot_1621598485](https://user-images.githubusercontent.com/42904172/119135381-f3341880-ba5b-11eb-8fa3-ebbaa709e3c1.png)
+![Screenshot_1621598493](https://user-images.githubusercontent.com/42904172/119135385-f4654580-ba5b-11eb-9910-8bc52603a530.png)
+![Screenshot_1621598519](https://user-images.githubusercontent.com/42904172/119135394-f62f0900-ba5b-11eb-9c42-d8bb3aff4c6a.png)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
