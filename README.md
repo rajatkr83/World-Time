@@ -9,6 +9,14 @@ Welcome to World Time! An app created using Jsonplaceholder & worldtimeapi.org
 <img src="https://user-images.githubusercontent.com/42904172/119136548-6d18d180-ba5d-11eb-8851-d325ece124d1.png" width="400" height="790">
 
 
+## How to Build:
+1. Install Android studio or any other editor you want
+2. Install flutter
+3. Install Dart and Flutter plugin in your editor.
+
+## How I developed it:
+There's a great YouTube channel: - The Net Ninja. I developed it using his tutorials and made some adjustments in UI.
+
 
 ## Getting Started
 
