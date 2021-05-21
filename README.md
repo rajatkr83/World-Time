@@ -5,7 +5,7 @@ Welcome to World Time! An app created using Jsonplaceholder & worldtimeapi.org
 
 ##ScreenShots
 
-![Screenshot 2021-05-21 174450](https://user-images.githubusercontent.com/42904172/119135664-5756dc80-ba5c-11eb-90e7-03476999f33a.png width="300")  ![Screenshot 2021-05-21 174642](https://user-images.githubusercontent.com/42904172/119135820-8d945c00-ba5c-11eb-98fb-b737c2e40306.png)
+![Screenshot 2021-05-21 174450](https://user-images.githubusercontent.com/42904172/119135664-5756dc80-ba5c-11eb-90e7-03476999f33a.png)  ![Screenshot 2021-05-21 174642](https://user-images.githubusercontent.com/42904172/119135820-8d945c00-ba5c-11eb-98fb-b737c2e40306.png)
 
 
 ## Getting Started
