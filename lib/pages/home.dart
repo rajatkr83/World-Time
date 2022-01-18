@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:world_time/size_config.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -10,6 +11,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     data = data.isNotEmpty ? data : ModalRoute.of(context).settings.arguments;
     print(data);
 
@@ -30,14 +32,15 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: EdgeInsets.symmetric(
+                vertical: SizeConfig.blockSizeVertical * 4,
+              ),
               child: Image(
                 image: AssetImage('images/$bgImage'),
-                height: 300,
+                height: SizeConfig.blockSizeVertical * 25,
                 width: double.infinity,
               ),
             ),
-            SizedBox(height: 40.0),
 
             //Main Card:- containing all the other cards.
             Card(
@@ -45,24 +48,33 @@ class _HomeState extends State<Home> {
                 borderRadius: BorderRadius.circular(30),
               ),
               color: Colors.black12,
-              margin: EdgeInsets.symmetric(horizontal: 15),
+              margin: EdgeInsets.only(
+                bottom: SizeConfig.blockSizeVertical * 5,
+                left: SizeConfig.blockSizeHorizontal * 6,
+                right: SizeConfig.blockSizeHorizontal * 6,
+              ),
               child: Column(
                 children: [
                   //Time Card.
                   Card(
-                    margin: EdgeInsets.symmetric(vertical: 40, horizontal: 10),
+                    margin: EdgeInsets.symmetric(
+                        vertical: SizeConfig.blockSizeVertical * 6,
+                        horizontal: SizeConfig.blockSizeHorizontal * 6
+                    ),
                     color: Colors.red.shade800,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 10, horizontal: 40),
+                      padding: EdgeInsets.symmetric(
+                          vertical: SizeConfig.blockSizeVertical * 1,
+                          horizontal: SizeConfig.blockSizeHorizontal * 10
+                      ),
                       child: Text(
                         data['time'],
                         style: TextStyle(
                           fontFamily: 'QuickSand',
-                          fontSize: 66.0,
+                          fontSize: SizeConfig.safeBlockHorizontal * 15,
                           color: Colors.white,
                         ),
                       ),
@@ -71,34 +83,32 @@ class _HomeState extends State<Home> {
                   Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(60, 0, 0, 10),
+                        padding: EdgeInsets.only(
+                          left: SizeConfig.blockSizeHorizontal * 16,
+                          right: SizeConfig.blockSizeHorizontal * 1,
+                        ),
                         child: Icon(
                           locationIcon,
                           color: iconColor,
-                          size: 70,
+                          size: SizeConfig.safeBlockVertical * 10,
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(10, 0, 0, 10),
-
-                        //Location Card.
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          color: Colors.black54,
-                          margin: EdgeInsets.symmetric(
-                              vertical: 20, horizontal: 30),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                                vertical: 10, horizontal: 30),
-                            child: Text(
-                              data['location'],
-                              style: TextStyle(
-                                fontFamily: 'DancingScript',
-                                fontSize: 30.0,
-                                color: Colors.white,
-                              ),
+                      Card(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        color: Colors.black54,
+                        margin: EdgeInsets.symmetric(
+                            vertical: 20, horizontal: 30),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 30),
+                          child: Text(
+                            data['location'],
+                            style: TextStyle(
+                              fontFamily: 'DancingScript',
+                              fontSize: 30.0,
+                              color: Colors.white,
                             ),
                           ),
                         ),
